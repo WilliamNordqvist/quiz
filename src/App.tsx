@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { QuizContext } from "./context";
+import { QuestionCard } from "./components/question-card";
+import { Gameover } from "./components/gameOver";
+import { ErrorComponent } from "./components/error";
+// import { GlobalStyle } from "./style";
+import { Loader } from "./components/loader";
+import './style.css'
 
-function App() {
+const App: React.FC = () => {
+  const context = useContext(QuizContext);
+  const { GameOver, Loading, Error } = context;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        {!Loading && !GameOver && !Error && <QuestionCard />}
+        {GameOver && <Gameover />}
+        {Loading && <Loader />}
+        {Error && <ErrorComponent />}
+      </div>
+      {/* <GlobalStyle /> */}
+    </>
   );
-}
+};
 
 export default App;

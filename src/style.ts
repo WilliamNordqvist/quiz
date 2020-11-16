@@ -1,0 +1,60 @@
+import { createGlobalStyle } from "styled-components";
+
+// export const GlobalStyle = createGlobalStyle`
+
+// @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+
+// * {
+//     box-sizing: border-box;
+//     font-family: 'Karla', sans-serif;
+//     font-weight: 400;
+//   }
+  
+//   html, body {
+//     margin:0;
+//     padding:0;
+//   }
+//   .App {
+//     background: #3c6e71;
+//     color: #d9d9d9;
+//     height:100vh;
+//   }
+
+//   .box-container {
+//     width: 90%;
+//     height:100%;
+//     display:flex;
+//     flex-direction:column;
+//     justify-content:center;
+//     margin: auto;
+//     text-align: center;
+
+//     .title {
+//         font-weight: 300;
+//         margin-top:0;
+//         @media only screen and (max-width: 600px) {
+//           font-size:24px;
+//         }
+//     }
+//   }
+
+//   .box {    
+//     text-align:center;
+//     width:100%;
+//     max-width:700px;
+//     min-height:350px;
+//     background: #284b63;
+//     padding: 30px 15px;
+//     margin: 3% auto 2% auto;
+//     border-radius: 7px;
+//     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+// }
+
+// .flex {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+// `;
